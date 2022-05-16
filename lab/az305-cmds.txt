@@ -1,0 +1,85 @@
+● 3 : 演習用アカウントのパスワードの変更
+https://portal.azure.com
+
+● 4 : 演習環境の準備
+cd ./clouddrive
+git clone https://github.com/necmp/az305.git
+
+● 演習2 : コンピューティングソリューションの設計
+./clouddrive/az305/setup-lab02.sh
+ssh admin<受講者番号>@<あなたの仮想マシンのパブリックIPアドレス>
+sudo apt update
+sudo apt install docker.io -y
+sudo docker pull nginx
+sudo docker run -p 80:80 nginx
+http://<あなたの仮想マシンのパブリックIPアドレス>
+sudo docker tag nginx reg<本日の年月日><受講者番号>.azurecr.io/nginx:v1
+sudo docker login reg<本日の年月日><受講者番号>.azurecr.io
+sudo docker push reg<本日の年月日><受講者番号>.azurecr.io/nginx:v1
+exit
+http://<あなたのコンテナーインスタンスのIPアドレス>
+
+● 演習3 : 非リレーショナルデータストレージソリューションの設計
+https://github.com/necmp/az305/raw/main/azure.zip 
+
+● 演習4 : リレーショナルデータ向けData Storageソリューションの設
+{
+    "areacode":"03",
+    "areaname":"tokyo"
+}
+
+{
+    "areacode":"06",
+    "areaname":"osaka"
+}
+
+SELECT * FROM c
+SELECT * FROM c WHERE c.areacode="03"
+
+● 演習6 : アプリケーションアーキテクチャソリューションの設計
+pip install azure-servicebus 
+nano clouddrive/az305/lab06.py
+python clouddrive/az305/lab06.py
+
+● 演習7 : 認証および承認ソリューションの設計
+pip install azure-identity
+pip install azure-keyvault-secrets
+nano clouddrive/az305/lab07.py
+python clouddrive/az305/lab07.py
+
+●演習8 : Azureリソースをログに記録して監視するソリューションの設計
+./clouddrive/az305/setup-lab08.sh
+
+Syslog
+
+Syslog
+| where Facility == 'daemon'
+| project EventTime, SeverityLevel, SyslogMessage
+
+Syslog
+| where Facility == 'cron'
+| project EventTime, SeverityLevel, SyslogMessage
+
+Perf
+| where CounterName == '% Processor Time'
+| where InstanceName == '_Total'
+| project TimeGenerated, CounterValue
+
+Perf
+| where CounterName == 'Available MBytes Memory'
+| project TimeGenerated, CounterValue
+
+● 演習9 : ネットワークインフラストラクチャソリューションの設計
+./clouddrive/az305/setup-lab09.sh
+ssh admin<受講者番号>@<あなたのファイアウォールのパブリックIPアドレス>
+hostname
+curl -v http://www.microsoft.com
+exit
+ssh admin<受講者番号>@<あなたのファイアウォールのパブリックIPアドレス>
+curl -v http://www.microsoft.com
+curl -v http://portal.azure.com
+exit
+
+●演習11 : ビジネス継続性ソリューションの設計
+./clouddrive/az305/setup-lab11.sh
+https://github.com/necmp/az305/raw/main/azure.zip
