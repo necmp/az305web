@@ -1,28 +1,28 @@
-â— 3 : æ¼”ç¿’ç”¨ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®å¤‰æ›´
+œ 3 : ‰‰K—pƒAƒJƒEƒ“ƒg‚ÌƒpƒXƒ[ƒh‚Ì•ÏX
 https://portal.azure.com
 
-â— 4 : æ¼”ç¿’ç’°å¢ƒã®æº–å‚™
+œ 4 : ‰‰KŠÂ‹«‚Ì€”õ
 cd ./clouddrive
 git clone https://github.com/necmp/az305.git
 
-â— æ¼”ç¿’2 : ã‚³ãƒ³ãƒ”ãƒ¥ãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã‚½ãƒªãƒ¥ãƒ¼ã‚·ãƒ§ãƒ³ã®è¨­è¨ˆ
+œ ‰‰K2 : ƒRƒ“ƒsƒ…[ƒeƒBƒ“ƒOƒ\ƒŠƒ…[ƒVƒ‡ƒ“‚ÌİŒv
 ./clouddrive/az305/setup-lab02.sh
-ssh admin<å—è¬›è€…ç•ªå·>@<ã‚ãªãŸã®ä»®æƒ³ãƒã‚·ãƒ³ã®ãƒ‘ãƒ–ãƒªãƒƒã‚¯IPã‚¢ãƒ‰ãƒ¬ã‚¹>
+ssh admin<óuÒ”Ô†>@<‚ ‚È‚½‚Ì‰¼‘zƒ}ƒVƒ“‚ÌƒpƒuƒŠƒbƒNIPƒAƒhƒŒƒX>
 sudo apt update
 sudo apt install docker.io -y
 sudo docker pull nginx
 sudo docker run -p 80:80 nginx
-http://<ã‚ãªãŸã®ä»®æƒ³ãƒã‚·ãƒ³ã®ãƒ‘ãƒ–ãƒªãƒƒã‚¯IPã‚¢ãƒ‰ãƒ¬ã‚¹>
-sudo docker tag nginx reg<æœ¬æ—¥ã®å¹´æœˆæ—¥><å—è¬›è€…ç•ªå·>.azurecr.io/nginx:v1
-sudo docker login reg<æœ¬æ—¥ã®å¹´æœˆæ—¥><å—è¬›è€…ç•ªå·>.azurecr.io
-sudo docker push reg<æœ¬æ—¥ã®å¹´æœˆæ—¥><å—è¬›è€…ç•ªå·>.azurecr.io/nginx:v1
+http://<‚ ‚È‚½‚Ì‰¼‘zƒ}ƒVƒ“‚ÌƒpƒuƒŠƒbƒNIPƒAƒhƒŒƒX>
+sudo docker tag nginx reg<–{“ú‚Ì”NŒ“ú><óuÒ”Ô†>.azurecr.io/nginx:v1
+sudo docker login reg<–{“ú‚Ì”NŒ“ú><óuÒ”Ô†>.azurecr.io
+sudo docker push reg<–{“ú‚Ì”NŒ“ú><óuÒ”Ô†>.azurecr.io/nginx:v1
 exit
-http://<ã‚ãªãŸã®ã‚³ãƒ³ãƒ†ãƒŠãƒ¼ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã®IPã‚¢ãƒ‰ãƒ¬ã‚¹>
+http://<‚ ‚È‚½‚ÌƒRƒ“ƒeƒi[ƒCƒ“ƒXƒ^ƒ“ƒX‚ÌIPƒAƒhƒŒƒX>
 
-â— æ¼”ç¿’3 : éãƒªãƒ¬ãƒ¼ã‚·ãƒ§ãƒŠãƒ«ãƒ‡ãƒ¼ã‚¿ã‚¹ãƒˆãƒ¬ãƒ¼ã‚¸ã‚½ãƒªãƒ¥ãƒ¼ã‚·ãƒ§ãƒ³ã®è¨­è¨ˆ
+œ ‰‰K3 : ”ñƒŠƒŒ[ƒVƒ‡ƒiƒ‹ƒf[ƒ^ƒXƒgƒŒ[ƒWƒ\ƒŠƒ…[ƒVƒ‡ƒ“‚ÌİŒv
 https://github.com/necmp/az305/raw/main/azure.zip 
 
-â— æ¼”ç¿’4 : ãƒªãƒ¬ãƒ¼ã‚·ãƒ§ãƒŠãƒ«ãƒ‡ãƒ¼ã‚¿å‘ã‘Data Storageã‚½ãƒªãƒ¥ãƒ¼ã‚·ãƒ§ãƒ³ã®è¨­
+œ ‰‰K4 : ƒŠƒŒ[ƒVƒ‡ƒiƒ‹ƒf[ƒ^Œü‚¯Data Storageƒ\ƒŠƒ…[ƒVƒ‡ƒ“‚Ìİ
 {
     "areacode":"03",
     "areaname":"tokyo"
@@ -36,18 +36,18 @@ https://github.com/necmp/az305/raw/main/azure.zip
 SELECT * FROM c
 SELECT * FROM c WHERE c.areacode="03"
 
-â— æ¼”ç¿’6 : ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã‚¢ãƒ¼ã‚­ãƒ†ã‚¯ãƒãƒ£ã‚½ãƒªãƒ¥ãƒ¼ã‚·ãƒ§ãƒ³ã®è¨­è¨ˆ
+œ ‰‰K6 : ƒAƒvƒŠƒP[ƒVƒ‡ƒ“ƒA[ƒLƒeƒNƒ`ƒƒƒ\ƒŠƒ…[ƒVƒ‡ƒ“‚ÌİŒv
 pip install azure-servicebus 
 nano clouddrive/az305/lab06.py
 python clouddrive/az305/lab06.py
 
-â— æ¼”ç¿’7 : èªè¨¼ãŠã‚ˆã³æ‰¿èªã‚½ãƒªãƒ¥ãƒ¼ã‚·ãƒ§ãƒ³ã®è¨­è¨ˆ
+œ ‰‰K7 : ”FØ‚¨‚æ‚Ñ³”Fƒ\ƒŠƒ…[ƒVƒ‡ƒ“‚ÌİŒv
 pip install azure-identity
 pip install azure-keyvault-secrets
 nano clouddrive/az305/lab07.py
 python clouddrive/az305/lab07.py
 
-â—æ¼”ç¿’8 : Azureãƒªã‚½ãƒ¼ã‚¹ã‚’ãƒ­ã‚°ã«è¨˜éŒ²ã—ã¦ç›£è¦–ã™ã‚‹ã‚½ãƒªãƒ¥ãƒ¼ã‚·ãƒ§ãƒ³ã®è¨­è¨ˆ
+œ‰‰K8 : AzureƒŠƒ\[ƒX‚ğƒƒO‚É‹L˜^‚µ‚ÄŠÄ‹‚·‚éƒ\ƒŠƒ…[ƒVƒ‡ƒ“‚ÌİŒv
 ./clouddrive/az305/setup-lab08.sh
 
 Syslog
@@ -69,17 +69,17 @@ Perf
 | where CounterName == 'Available MBytes Memory'
 | project TimeGenerated, CounterValue
 
-â— æ¼”ç¿’9 : ãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯ã‚¤ãƒ³ãƒ•ãƒ©ã‚¹ãƒˆãƒ©ã‚¯ãƒãƒ£ã‚½ãƒªãƒ¥ãƒ¼ã‚·ãƒ§ãƒ³ã®è¨­è¨ˆ
+œ ‰‰K9 : ƒlƒbƒgƒ[ƒNƒCƒ“ƒtƒ‰ƒXƒgƒ‰ƒNƒ`ƒƒƒ\ƒŠƒ…[ƒVƒ‡ƒ“‚ÌİŒv
 ./clouddrive/az305/setup-lab09.sh
-ssh admin<å—è¬›è€…ç•ªå·>@<ã‚ãªãŸã®ãƒ•ã‚¡ã‚¤ã‚¢ã‚¦ã‚©ãƒ¼ãƒ«ã®ãƒ‘ãƒ–ãƒªãƒƒã‚¯IPã‚¢ãƒ‰ãƒ¬ã‚¹>
+ssh admin<óuÒ”Ô†>@<‚ ‚È‚½‚Ìƒtƒ@ƒCƒAƒEƒH[ƒ‹‚ÌƒpƒuƒŠƒbƒNIPƒAƒhƒŒƒX>
 hostname
 curl -v http://www.microsoft.com
 exit
-ssh admin<å—è¬›è€…ç•ªå·>@<ã‚ãªãŸã®ãƒ•ã‚¡ã‚¤ã‚¢ã‚¦ã‚©ãƒ¼ãƒ«ã®ãƒ‘ãƒ–ãƒªãƒƒã‚¯IPã‚¢ãƒ‰ãƒ¬ã‚¹>
+ssh admin<óuÒ”Ô†>@<‚ ‚È‚½‚Ìƒtƒ@ƒCƒAƒEƒH[ƒ‹‚ÌƒpƒuƒŠƒbƒNIPƒAƒhƒŒƒX>
 curl -v http://www.microsoft.com
 curl -v http://portal.azure.com
 exit
 
-â—æ¼”ç¿’11 : ãƒ“ã‚¸ãƒã‚¹ç¶™ç¶šæ€§ã‚½ãƒªãƒ¥ãƒ¼ã‚·ãƒ§ãƒ³ã®è¨­è¨ˆ
+œ‰‰K11 : ƒrƒWƒlƒXŒp‘±«ƒ\ƒŠƒ…[ƒVƒ‡ƒ“‚ÌİŒv
 ./clouddrive/az305/setup-lab11.sh
 https://github.com/necmp/az305/raw/main/azure.zip
