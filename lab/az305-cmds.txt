@@ -4,6 +4,7 @@ https://portal.azure.com
 ● 4 : 演習環境の準備
 cd ./clouddrive
 git clone https://github.com/necmp/az305.git
+cd ..
 
 ● 演習2 : コンピューティングソリューションの設計
 ./clouddrive/az305/setup-lab02.sh
