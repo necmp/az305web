@@ -1,0 +1,51 @@
+
+●モジュール1
+・コンプライアンス=企業が国の法律や社内ルールを守ること
+・ガバナンス=コンプライアンスを維持するために管理すること
+・Tenat Root Group=既定で作成済みの管理グループ
+
+●モジュール2
+・Webアプリ=人が操作する
+・APIアプリ=アプリが操作する
+
+●モジュール3
+・Premium ページBLOB = 別名「Premium 汎用v2」
+・ストレージの料金=保存料金、アクセス料金
+・ホット=保存 高/アクセス 安
+・クール=保存 安/アクセス 高
+・アーカイブ=保存 激安/アクセス 激高
+・ライフサイクルルールは、Standad 汎用v2またはPremiumファイル共有でのみ利用可能
+・不変ストレージポリシーは、Standad 汎用v2またはPremium ブロックBLOBでのみ利用可能
+・多層防御
+
+●モジュール5
+・ビックデータ=大容量のデータ、さまざまな種類のデータ、データを活用、限られた時間の中で
+・ビックデータの処理=データ -> 収集（Azure Data Factory） -> 保存（Azure Data Lake） -> 分析（Azure DataBricks）
+・ビックデータの保存=データウェアハウス（Azure Synapse Alaytics）、データレイク（Azure Data Lake）
+・ビックデータの分析=Apache Hadoop（Azure HD Insight） -> Apache Spark -> Databricks（Azure Databricks）
+・ビックデータの処理=データ ->収集、保存、分析（Azure Synapse Alaytics）
+
+●モジュール6
+・メッセージ=Azure Storage キュー、Azure Service Bus（キューまたはトピック）
+・イベント=Event Hubs、Event Grid
+・キャッシュ=コンテンツキャッシュ（Azure CDN）、データキャッシュ（Azure Cache for Redis）
+・アプリのライフサイクル=インフラのデプロイ（ARMテンプレート、Bicep、Terraform）、アプリのデプロイ（Azure DevOps）、設定のデプロイ（Azure App Configuration）
+
+●モジュール7
+・認証=ユーザー本人の確認（ログイン）=Azure AD
+・承認（認可）=ユーザーのアクセス範囲の確認（アクセス権）= RBAC
+・アプリケーションプリンシパル=マネージドID、アプリケーションプリンシパル
+・Key Vault=キー、証明書、シークレット
+
+●モジュール8
+・Azure Monitorの監視対象=メトリック、ログ
+・Log Analytics -> Azure Monitor ログ
+
+●モジュール9
+・Just in Time VMアクセスには、Microsoft Defedner for Cloudが必要
+
+●モジュール10
+・MTTR=Mean Time to Recovery=平均復旧時間
+・MTBF=Mean Time Between Failure=平均故障間隔
+・Azure Baclupによるオンプレの仮想マシンのバックアップには、MABS（Microsoft Azure Backup Server）が必要
+
